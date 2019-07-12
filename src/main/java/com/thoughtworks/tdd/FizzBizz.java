@@ -3,14 +3,18 @@ package com.thoughtworks.tdd;
 public class FizzBizz {
 
     public String convert(Integer number) {
-        if(number % 3 == 0){
-            return "Fizz";
-        }
-        if(number % 5 == 0){
-            return "Bizz";
-        }
-        if(number % 7 == 0){
-            return "Whizz";
+        String result = "";
+        if(number%3==0 || number%5==0 || number%7==0) {
+            if(number % 3 == 0){
+                result +="Fizz";
+            }
+            if(number % 5 == 0){
+                result += "Bizz";
+            }
+            if(number % 7 == 0){
+                result += "Whizz";
+            }
+            return result;
         }
         return number.toString();
     }
