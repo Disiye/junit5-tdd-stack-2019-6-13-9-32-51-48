@@ -9,6 +9,9 @@ public class FizzBizz {
         if(number % 5 == 0){
             return "Bizz";
         }
+        if(number % 7 == 0){
+            return "Whizz";
+        }
         return number.toString();
     }
 }
