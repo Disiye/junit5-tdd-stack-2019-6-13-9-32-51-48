@@ -58,4 +58,15 @@ public class FizzBizzTest {
         //then
         Assertions.assertEquals("FizzBizz", result);
     }
+
+    @Test
+    public void should_return_fizzbizzwhizz_when_number_is_105() {
+        //given
+        Integer number = 105;
+        FizzBizz fizzBizz =new FizzBizz();
+        //when
+        String result = fizzBizz.convert(number);
+        //then
+        Assertions.assertEquals("FizzBizzWhizz", result);
+    }
 }
