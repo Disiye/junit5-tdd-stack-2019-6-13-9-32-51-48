@@ -25,4 +25,15 @@ public class FizzBizzTest {
         //then
         Assertions.assertEquals("Fizz", result);
     }
+
+    @Test
+    public void should_return_bizz_when_number_is_5() {
+        //given
+        Integer number = 5;
+        FizzBizz fizzBizz =new FizzBizz();
+        //when
+        String result = fizzBizz.convert(number);
+        //then
+        Assertions.assertEquals("Bizz", result);
+    }
 }
